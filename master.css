@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 25px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    width: 650px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noti__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.head__title {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.head__noti-number {
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 3px 10px;
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    border-radius: 5px;
+}
+
+.head__noti-read {
+    font-size: 15px;
+    color: hsl(219, 12%, 42%);
+}
+
+.head__noti-read:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+
+.noti__card {
+    display: flex;    
+    padding: 15px;
+    background-color: white; /*cambiar a blanco*/
+    border-radius: 5px;
+    margin: 4px 0;
+}
+
+.noti__card-new {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.card__image {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.card__information {
+    font-size: 15px;   
+    flex-grow: 1; 
+}
+
+.card__name {
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.card__name:hover {    
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.card__text {
+    display: inline;   
+    color: hsl(219, 12%, 42%); 
+}
+
+.card__text-bold {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+
+.card__text-bold:hover {    
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.card__new-noti-icon {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.icon-hide {
+    visibility: hidden;
+    position: absolute;
+}
+
+.card__time {
+    color: hsl(219, 14%, 63%);
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.card__message {
+    display: block;
+    padding: 15px;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 3px;
+    margin: 15px 0 5px 0;
+    color: hsl(219, 12%, 42%);
+    font-size: 15px;
+}
+
+.card__message:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.comment-image {
+    margin: 0 0 0 10px;    
+}
+
+.comment-image:hover {
+    cursor: pointer;      
+}
+
+.text-club {
+    color: hsl(219, 85%, 26%);
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        margin: 0;
+    }
+    .container{
+        border-radius: 0;
+    }
+}

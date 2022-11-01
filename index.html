@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="master.css">
+  <title>Notifications page</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="noti__head">
+      <div class="head__title">Notifications <span class="head__noti-number" id="noti-number"></span></div> 
+      <div id="noti-read" class="head__noti-read" onclick="markAllRead()">Mark all as read</div>
+    </div>
+
+    <div id="noti__card1" class="noti__card noti__card-new" onclick="myFunction()">      
+      <img src="/assets/images/avatar-mark-webber.webp" alt="" class="card__image">  
+      <div class="card__information">
+        <p class="card__name">Mark Webber</p>
+        <p class="card__text">reacted to your recent post <span class="card__text-bold">My first tournament today!</span></p>
+        <span id="new-noti1" class="card__new-noti-icon"></span>
+        <p class="card__time">1m ago</p>
+      </div>      
+    </div>
+
+    <div id="noti__card2" class="noti__card noti__card-new" onclick="myFunction2()">      
+      <img src="/assets/images/avatar-angela-gray.webp" alt="" class="card__image">  
+      <div class="card__information">
+        <p class="card__name">Angela Gray</p>
+        <p class="card__text">followed you</p>
+        <span id="new-noti2" class="card__new-noti-icon"></span>
+        <p class="card__time">5m ago</p>
+      </div>      
+    </div>
+
+    <div id="noti__card3" class="noti__card noti__card-new" onclick="myFunction3()">      
+      <img src="/assets/images/avatar-jacob-thompson.webp" alt="" class="card__image">  
+      <div class="card__information">
+        <p class="card__name">Jacob Thompson</p>
+        <p class="card__text">has joined your group <span class="card__text-bold text-club">Chess Club</span></p>
+        <span id="new-noti3" class="card__new-noti-icon"></span>
+        <p class="card__time">1 day ago</p>
+      </div>      
+    </div>
+
+    <div  class="noti__card">      
+      <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" class="card__image">  
+      <div class="card__information">
+        <p class="card__name">Rizky Hasanuddin</p>
+        <p class="card__text">sent you a private message</p>
+        <span class="card__new-noti-icon icon-hide"></span>
+        <p class="card__time">5 day ago</p>
+        <div class="card__message">
+          <p class="message__text">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.</p>
+        </div>
+      </div>      
+    </div>
+
+    <div  class="noti__card">      
+      <img src="/assets/images/avatar-kimberly-smith.webp" alt="" class="card__image">  
+      <div class="card__information">
+        <p class="card__name">Kimberly Smith</p>
+        <p class="card__text">commented on your picture</p>
+        <span class="card__new-noti-icon icon-hide"></span>
+        <p class="card__time">1 week ago</p>
+      </div>     
+      <img src="/assets/images/image-chess.webp" alt="" class="card__image comment-image"> 
+    </div>
+
+    <div  class="noti__card">      
+      <img src="/assets/images/avatar-nathan-peterson.webp" alt="" class="card__image">  
+      <div class="card__information">
+        <p class="card__name">Nathan Peterson</p>
+        <p class="card__text">reacted to your recent post <span class="card__text-bold">5 end-game strategies to increase your win rate</span></p>
+        <span class="card__new-noti-icon icon-hide"></span>        
+        <p class="card__time">2 weeks ago</p>
+      </div>      
+    </div>
+
+    <div  class="noti__card">      
+      <img src="/assets/images/avatar-anna-kim.webp" alt="" class="card__image">  
+      <div class="card__information">
+        <p class="card__name">Anna Kim</p>
+        <p class="card__text">left the group <span class="card__text-bold text-club">Chess Club</span></p>
+        <span class="card__new-noti-icon icon-hide"></span>
+        <p class="card__time">2 weeks ago</p>
+      </div>      
+    </div>
+
+  </div>  
+  
+</body>
+<script src="app.js"></script>
+</html>
